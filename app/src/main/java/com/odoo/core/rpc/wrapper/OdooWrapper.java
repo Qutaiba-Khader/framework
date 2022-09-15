@@ -90,8 +90,9 @@ public class OdooWrapper<T> implements Response.Listener<JSONObject> {
         serverURL = stripURL(baseURL);
         gson = new Gson();
         responseQueue = new OdooResponseQueue();
-        requestQueue = Volley.newRequestQueue(context,
-                new HttpClientStack(OdooSafeClient.getSafeClient(true)));
+        requestQueue = Volley.newRequestQueue(context,new HttpClientStack(OdooSafeClient.getSafeClient(true)));
+//                requestQueue.add(OdooSafeClient.getSafeClient(true));
+//                new HttpClientStack(OdooSafeClient.getSafeClient(true)));
     }
 
     @SuppressWarnings("unchecked")

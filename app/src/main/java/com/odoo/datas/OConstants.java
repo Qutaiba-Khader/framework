@@ -19,8 +19,11 @@
  */
 package com.odoo.datas;
 
+import com.odoo.R;
+
 public class OConstants {
-    public static final String URL_ODOO = "https://www.odoo.com";
+//    public static final String URL_ODOO = "https://odoo.techsfactory.com";
+public static final String URL_ODOO = "http://176.58.97.128:8069";
     public static final String URL_ODOO_RESET_PASSWORD = URL_ODOO + "/web/reset_password";
     public static final String URL_ODOO_SIGN_UP = URL_ODOO + "/web/signup";
     public static final String URL_ODOO_MOBILE_GIT_HUB = "https://github.com/Odoo-mobile";

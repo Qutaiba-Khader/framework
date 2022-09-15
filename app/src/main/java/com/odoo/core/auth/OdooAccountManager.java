@@ -26,19 +26,17 @@ import android.accounts.AuthenticatorException;
 import android.accounts.OperationCanceledException;
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.BoolRes;
-import android.support.design.widget.BottomSheetDialog;
+import androidx.annotation.BoolRes;
+
 import android.util.Log;
 
 import com.odoo.App;
-import com.odoo.core.orm.OModel;
 import com.odoo.core.orm.OSQLite;
 import com.odoo.core.support.OUser;
 import com.odoo.core.utils.OPreferenceManager;
 import com.odoo.core.utils.sys.OCacheUtils;
 
 import java.io.IOException;
-import java.net.Authenticator;
 import java.util.ArrayList;
 import java.util.List;
 
